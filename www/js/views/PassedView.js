@@ -11,7 +11,11 @@ app.views.PassedView = Backbone.View.extend({
     },
 
     send: function () {
-        alert("Your result has been sent to Aaron. He will be your good friend until the end of the world!");
+        if(!$("#name").val()){
+            alert("Please enter your name...");
+            return;
+        }
+        sendMail();
         console.log("quit");
     },
 
@@ -19,3 +23,14 @@ app.views.PassedView = Backbone.View.extend({
         alert("quit");
     }
 });
+
+
+function sendMail() {
+    var link = "mailto:sensisapp@gmail.com?"
+            + "subject=" + escape("Aaron Result")
+            + "&body=" + escape(document.getElementById('name').value)
+            + " just passed the Aaron test. How much he/she likes Aaron: "
+            + escape(document.getElementById('degree').value)
+        ;
+    window.location.href = link;
+}

@@ -13,21 +13,19 @@ app.routers.AppRouter = Backbone.Router.extend({
     },
 
     home: function () {
-        var view = new app.views.HomeView();
-        this.renderCurrentPage(view)
+        this.renderCurrentPage(new app.views.HomeView())
     },
 
     questions: function () {
-        var view = new app.views.QuestionsView();
-        this.renderCurrentPage(view)
+        this.renderCurrentPage(new app.views.QuestionsView())
     },
 
     passed: function () {
-        console.log("passed");
+        this.renderCurrentPage(new app.views.PassedView())
     },
 
     failed: function () {
-        console.log("failed");
+        this.renderCurrentPage(new app.views.FailedView())
     },
 
     renderCurrentPage: function (view) {
@@ -54,7 +52,7 @@ var questionTextList = [
     "Question 5: Does Aaron have any siblings?",
     "Question 6: What does Aaron's wife do for a living?",
     "Question 7: What is Aaron's last name in Chinese?",
-    "Question 8: If Aaron can pick a second career, what he most likely will become?",
+    "Question 8: If Aaron can have a second career, what he most likely will become?",
     "Question 9: Who is his favourite co-worker?",
     "Question 10: What does Aaron like to complain about?"
 ];

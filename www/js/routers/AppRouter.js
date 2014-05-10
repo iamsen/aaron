@@ -4,6 +4,7 @@ app.routers.AppRouter = Backbone.Router.extend({
         "": "home",
         "questions/:num": "questions",
         "failed": "failed",
+        "passedImg": "passedImg",
         "passed": "passed"
     },
 
@@ -13,19 +14,23 @@ app.routers.AppRouter = Backbone.Router.extend({
     },
 
     home: function () {
-        this.renderCurrentPage(new app.views.HomeView())
+        this.renderCurrentPage(new app.views.HomeView());
     },
 
     questions: function () {
-        this.renderCurrentPage(new app.views.QuestionsView())
+        this.renderCurrentPage(new app.views.QuestionsView());
+    },
+
+    passedImg: function () {
+        this.renderCurrentPage(new app.views.PassedImgView());
     },
 
     passed: function () {
-        this.renderCurrentPage(new app.views.PassedView())
+        this.renderCurrentPage(new app.views.PassedView());
     },
 
     failed: function () {
-        this.renderCurrentPage(new app.views.FailedView())
+        this.renderCurrentPage(new app.views.FailedView());
     },
 
     renderCurrentPage: function (view) {

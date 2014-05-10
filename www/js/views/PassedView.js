@@ -1,3 +1,19 @@
+app.views.PassedImgView = Backbone.View.extend({
+
+    render: function () {
+        this.$el.html(this.template());
+        return this;
+    },
+
+    events: {
+        "click #next": "next"
+    },
+
+    next: function () {
+        app.router.navigate("passed", {trigger: true});
+    }
+});
+
 app.views.PassedView = Backbone.View.extend({
 
     render: function () {

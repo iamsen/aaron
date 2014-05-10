@@ -32,7 +32,7 @@ app.views.QuestionsView = Backbone.View.extend({
         currentQuestionNum++;
         if (currentQuestionNum > 10) {
             if (numCorrectAnswers == 10) {
-                app.router.navigate("passed", {trigger: true});
+                app.router.navigate("passedImg", {trigger: true});
             } else {
                 app.router.navigate("failed", {trigger: true});
             }

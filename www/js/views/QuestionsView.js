@@ -6,6 +6,9 @@ app.views.QuestionsView = Backbone.View.extend({
         param.questionText = questionTextList[currentQuestionNum - 1];
         param.questionChoices = questionChoicesList[currentQuestionNum - 1];
         this.$el.html(this.template(param));
+        if (currentQuestionNum === 10) {
+            $("#next", this.$el).text('Complete');
+        }
         return this;
     },
 
@@ -28,10 +31,10 @@ app.views.QuestionsView = Backbone.View.extend({
 
         currentQuestionNum++;
         if (currentQuestionNum > 10) {
-            if(numCorrectAnswers == 10){
-                app.router.navigate("passed" + currentQuestionNum, {trigger: true});
-            }else{
-                app.router.navigate("failed" + currentQuestionNum, {trigger: true});
+            if (numCorrectAnswers == 10) {
+                app.router.navigate("passed", {trigger: true});
+            } else {
+                app.router.navigate("failed", {trigger: true});
             }
         } else {
             app.router.navigate("questions/" + currentQuestionNum, {trigger: true});

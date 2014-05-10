@@ -1,0 +1,16 @@
+.idea/
+.project
+hooks/
+merges/
+platforms/android/ant-build/
+platforms/android/ant-gen/
+platforms/android/assets/
+platforms/android/cordova/
+platforms/android/CordovaLib/
+platforms/android/libs/
+platforms/android/platform_www/
+platforms/android/src/
+platforms/android/local.properties
+platforms/android/gen/
+out/
+*.iml

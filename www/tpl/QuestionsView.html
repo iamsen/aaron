@@ -1,0 +1,24 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item left quarter">
+    </div>
+    <div class="topcoat-navigation-bar__item center half">
+        <h1 class="topcoat-navigation-bar__title"><%= currentQuestionNum %>/10</h1>
+    </div>
+</div>
+
+<div class="content-padded">
+    <p id="question-text"><%= questionText %></p>
+    <div id="choices">
+            <% _.each(questionChoices, function(choice, index) { %>
+                <label class="topcoat-radio-button">
+                    <input type="radio" name="choice" value="<%= index %>">
+                    <div class="topcoat-radio-button__checkmark"></div>
+                    <%= choice %>
+                </label>
+                <br>
+                <br>
+            <% }); %>
+    </div>
+</div>
+
+<button id="next" class="topcoat-button--cta bottom-right" >Next</button>

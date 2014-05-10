@@ -39,6 +39,7 @@ app.routers.AppRouter = Backbone.Router.extend({
         }
         app.currentView = view;
         app.slider.slidePage(view.render().$el);
+//        $("body").html(view.render().el);
     }
 
 });

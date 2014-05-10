@@ -15,7 +15,7 @@ app.views.HomeView = Backbone.View.extend({
     },
 
     quit: function () {
-        alert("exit");
+        navigator.app.exitApp();
     }
 
 });

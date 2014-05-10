@@ -32,11 +32,11 @@ app.views.PassedView = Backbone.View.extend({
             return;
         }
         sendMail();
-        console.log("quit");
+        navigator.app.exitApp();
     },
 
     quit: function () {
-        alert("quit");
+        navigator.app.exitApp();
     }
 });
 

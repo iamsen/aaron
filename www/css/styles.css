@@ -361,8 +361,3 @@ input[type="radio"]:disabled:active + .topcoat-radio-button__checkmark:before {
     margin-bottom: 10px;
     margin-right: 10px;
 }
-
-
-/*body {*/
-    /*overflow-x: hidden;*/
-/*}*/

@@ -19,6 +19,6 @@ app.views.FailedView = Backbone.View.extend({
     },
 
     quit: function () {
-        alert("quit");
+        navigator.app.exitApp();
     }
 });

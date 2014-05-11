@@ -51,5 +51,5 @@ function onBackKeyDown() {
 }
 
 function onPause() {
-    navigator.app.exitApp();
+//    navigator.app.exitApp();
 }

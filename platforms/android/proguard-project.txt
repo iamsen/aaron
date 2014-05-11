@@ -18,3 +18,9 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-keep class org.apache.cordova.** { *; }
+-keep public class * extends org.apache.cordova.CordovaPlugin
+-keep public class org.apache.**
+-dontwarn android.webkit.*
+-dontwarn org.apache.**

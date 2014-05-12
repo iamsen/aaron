@@ -21,7 +21,7 @@ var questionChoicesList = [
     ["Apple", "Banana", "Kiwi", "Lemon", "Orange"],
     ["San Francisco", "Hong Kong", "Vancouver", "Tahiti", "Seoul"],
     ["Sushi", "Tonkatsu", "Tom yum goong", "Gam ja tang", "Lobster roll"],
-    ["BMX 325i", "Toyota camry", "Mini cooper S", "Mazada 3", "Mustang"],
+    ["BMX 325i", "Toyota camry", "Mini cooper S", "Mazda 3", "Mustang"],
     ["No", "One brother", "One sister", "One twin brother and one sister", "Two brothers"],
     ["Accountant", "Dentist", "Lawyer", "Professor", "He doesn't have a wife!"],
     ["權", "全", "關", "拳", "Can't translate into Chinese"],

@@ -26,7 +26,7 @@ var questionChoicesList = [
     ["Accountant", "Dentist", "Lawyer", "Professor", "He doesn't have a wife!"],
     ["權", "全", "關", "拳", "Can't translate into Chinese"],
     ["Artist", "Chef", "Hipster", "MMA fighter", "Billionaire"],
-    ["Alex", "Ilya", "Greg", "Ryan", "Lou"],
+    ["Alex", "Ilya", "Greg", "Ryan", "Lou (select this)"],
     ["Sen", "Weather", "Money", "Job", "Everything"]
 ];
 
